@@ -1,0 +1,17 @@
+# Core dependencies
+python-dotenv
+
+# LiveKit Agent SDK
+livekit-agents
+livekit-plugins-openai
+livekit-plugins-groq
+livekit-plugins-deepgram
+livekit-plugins-cartesia
+livekit-plugins-silero
+langchain
+langchain_community
+langchain-groq
+groq
+ddgs
+langgraph
+langchain-mcp-adapters

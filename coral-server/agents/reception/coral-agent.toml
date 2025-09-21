@@ -1,0 +1,41 @@
+[agent]
+name = "reception"
+version = "0.0.1"
+description = "Agent that can differentiate between logical and therapist"
+
+
+[options.GROQ_API_KEY]
+type = "string"
+description = "API key for the model provider"
+
+
+[options.LLM_MODEL]
+type = "string"
+description = "What model to use (e.g 'gemma2-9b-it')"
+default = "gemma2-9b-it"
+
+[options.LLM_PROVIDER]
+type = "string"
+description = "What model provider to use (e.g 'grq', etc)"
+default = "groq"
+
+[options.MODEL_MAX_TOKENS]
+type = "string"
+description = "Max tokens to use"
+default = "16000"
+
+[options.MODEL_TEMPERATURE]
+type = "string"
+description = "What model temperature to use"
+default = "0.3"
+
+[options.TIMEOUT_MS]
+type = "string"
+description = "Connection/tool timeouts in ms"
+default = "300"
+
+[runtimes.executable]
+command = ["bash", "-c", "./run_agent.sh main.py"]
+
+
+
